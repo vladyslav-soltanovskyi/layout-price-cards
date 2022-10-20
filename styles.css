@@ -1,0 +1,123 @@
+.price {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #141B1C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price-card {
+  background: #334247;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  width: 380px;
+}
+.price-card:not(:last-child) {
+  margin-right: 18px;
+}
+.price-card__header {
+  margin: 33px 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.price-card__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+.price-card__subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.price-card__price {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 67px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 16px 0;
+}
+.price-card__price_green {
+  background: #5BB189;
+}
+.price-card__price_blue {
+  background: #3A6BA5;
+}
+.price-card__price_orange {
+  background: #EC632A;
+}
+.price-card__description {
+  padding: 40px 26px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.price-card__options-list__item {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+.price-card__options-list__item:nth-child(2n+1) {
+  background-color: rgba(41, 52, 56, 0.5);
+}
+.price-card__options-list__item:nth-child(2n) {
+  background-color: rgba(31, 61, 99, 0);
+}
+.price-card__options-list__item-icon {
+  width: 15px;
+  height: 13px;
+  margin: 0 22px;
+}
+.price-card__options-list__item-icon_green {
+  background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
+}
+.price-card__options-list__item-icon_blue {
+  background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
+}
+.price-card__options-list__item-icon_orange {
+  background: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
+}
+.price-card__options-list__item-text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.price-card__order-btn {
+  outline: none;
+  border: none;
+  margin: 39px 113px 40px 112px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 11px 26px 12px 27px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.price-card__order-btn_green {
+  background: #5BB189;
+}
+.price-card__order-btn_blue {
+  background: #3A6BA5;
+}
+.price-card__order-btn_orange {
+  background: #EC632A;
+}
+.price-card__order-btn:active {
+  transform: translateY(1px);
+}
+
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */

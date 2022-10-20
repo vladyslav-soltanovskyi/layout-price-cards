@@ -1,0 +1,138 @@
+.price {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #141B1C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-card {
+    background: #334247;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+    width: 380px;
+    
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+    
+    &__header {
+      margin: 33px 0;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__price {
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 67px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 16px 0;
+
+      &_green {
+        background: #5BB189;
+      }
+
+      &_blue {
+        background: #3A6BA5;
+      }
+
+      &_orange {
+        background: #EC632A;
+      }
+    }
+
+    &__description {
+      padding: 40px 26px;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    &__options-list {
+      &__item {
+        display: flex;
+        align-items: center;
+        padding: 16px 0;
+
+        &:nth-child(2n+1) {
+          background-color: rgba(41, 52, 56, 0.5);
+        }
+
+        &:nth-child(2n) {
+          background-color: rgb(31, 61, 99, 0);
+        }
+
+        &-icon {
+          width: 15px;
+          height: 13px;
+          margin: 0 22px;
+
+          &_green {
+            background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+          }
+
+          &_blue {
+            background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+          }
+
+          &_orange {
+            background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
+          }
+        }
+
+        &-text {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 18px;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &__order-btn {
+      outline: none;
+      border: none;
+      margin: 39px 113px 40px 112px;
+      text-transform: uppercase;
+      border-radius: 20px;
+      padding: 11px 26px 12px 27px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #FFFFFF;
+      cursor: pointer;
+      
+      &_green {
+        background: #5BB189;
+      }
+
+      &_blue {
+        background: #3A6BA5;
+      }
+
+      &_orange {
+        background: #EC632A;
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+}
